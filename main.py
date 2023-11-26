@@ -16,7 +16,7 @@ async def root():
 async def User(genero: str):
     try:
         resultado = PlayTimeGenre(genero)
-        return resultado
+        return str(resultado)
     except Exception as e:
         return {"error": str(e)}   
 
