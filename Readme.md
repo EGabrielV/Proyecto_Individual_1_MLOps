@@ -48,6 +48,7 @@ A continuacion se muestran los DataSets brindados, y las columnas de interes que
 Una vez tenemos los datos listos para el trabajo procedemos al desarrollo del modelo de ML y las funciones. Para que nuestra API facilitara de forma eficiente y veloz los datos que hemos tratado, esta se alimentará de datasets personalizados que contienen los datos pre-procesados [Consultas](Consultas). Por lo tanto, nuestras funciones solo deben leer los datos de entrada y arrojar las respuestas guardadas en los datasets de Consulta.
 
 El desarrollo de estos datasets personalizados se encuentran en el archivo [Consultas](Consultas.ipynb) explicando paso a paso el proceso que se utilizó. De esta manera nuestras funciones devolverán datos como: año con más horas jugadas por género, usuario con más horas jugadas por género, top 3 de juegos MÁS recomendados por usuarios para el año dado, etc. [Funciones](#Funciones-a-implementar:)
+
 La última función desarrollada es el sistema de recomendación, la cual consta de un algoritmo de aprendizaje automático no supervisado que tiene como finalidad recomendar 5 juegos similares al juego de entrada, utilizando técnicas de recomendación con la biblioteca "sklearn.neighbors". Este modelo está desarrollado al final del archivo [Consultas](Consultas.ipynb).
 
 Como último paso utilizamos la libreria FastApi para desplegar nuestra API en la web con la ayuda de Render (sitio que permite crear y ejecutar aplicaciones y sitios web desde Git) y GitHub (forja para alojar proyectos).
