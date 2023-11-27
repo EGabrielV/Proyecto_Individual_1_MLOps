@@ -26,7 +26,7 @@ async def root():
         "**Sistema de recomendación item-item:**"
               " \n \recomendacion_juego( id de producto ): \n"
         "   Devuelve una lista con 5 juegos recomendados similares al ingresado."
-              )
+    )
     return {"message": mensaje}
 
 @app.get("/PlayTimeGenre/{genero}")
