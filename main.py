@@ -29,7 +29,7 @@ async def root():
     )
     return {"message": mensaje}
 
-@app.get("/PlayTimeGenre/{genero}", tags='PlayTimeGenre')
+@app.get("/PlayTimeGenre/{genero}", tags=['PlayTimeGenre'])
 async def User(genero: str):
     """
     Devuelve el año de lanzamiento correspondiente al género proporcionado.
@@ -47,7 +47,7 @@ async def User(genero: str):
     except Exception as e:
         return {"error": str(e)}   
 
-@app.get("/UserForGenre/{genero}", tags='UserForGenre')
+@app.get("/UserForGenre/{genero}", tags=['UserForGenre'])
 async def User(genero: str):
     """
     Devuelve el usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año.
@@ -71,7 +71,7 @@ async def User(genero: str):
     except Exception as e:
         return {"error": str(e)}   
     
-@app.get("/UsersRecommend/{anio}", tags='UsersRecommend')
+@app.get("/UsersRecommend/{anio}", tags=['UsersRecommend'])
 async def User(anio: int):
     """
     Devuelve el top 3 de juegos MÁS recomendados por usuarios para el año dado.
@@ -94,7 +94,7 @@ async def User(anio: int):
     except Exception as e:
         return {"Año debe ser un entero": str(e)}   
     
-@app.get("/UsersWorstDeveloper/{anio}", tags='UsersWorstDeveloper')
+@app.get("/UsersWorstDeveloper/{anio}", tags=['UsersWorstDeveloper'])
 async def User(anio: int):
     """
     Devuelve el top 3 de desarrolladoras con juegos MENOS recomendados por usuarios para el año dado.
@@ -117,7 +117,7 @@ async def User(anio: int):
     except Exception as e:
         return {"Año debe ser un entero": str(e)}   
     
-@app.get("/sentiment_analysis/{empresa_desarrolladora}", tags='sentiment_analysis')
+@app.get("/sentiment_analysis/{empresa_desarrolladora}", tags=['sentiment_analysis'])
 async def User(empresa_desarrolladora: str):
     """
     Devuelve el nombre de la desarrolladora y una lista de la suma de análisis de sentimiento.
@@ -138,7 +138,7 @@ async def User(empresa_desarrolladora: str):
     except Exception as e:
         return {"error": str(e)}  
     
-@app.get("/recomendacion_juego/{id}", tags='recomendacion_juego')
+@app.get("/recomendacion_juego/{id}", tags=['recomendacion_juego'])
 async def recomendacion(id: int):
     """
     Devuelve una lista con 5 juegos recomendados similares al ingresado.
