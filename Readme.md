@@ -178,7 +178,15 @@ git push -u origin main
 ![Alt text](src/Render.PNG)
 
 En este campo ponemos:
+
     uvicorn main:app --host 0.0.0.0 --port 10000
 
 ![Alt text](src/Render_2.PNG)
 
+Y corremos nuestro servicio, y podemos acceder a él con el link.
+
+![Alt text](src/Render_3.PNG)
+
+Con nuestro servicio corriendo podemos ingresar a las funciones añadiendo \docs al final de nuestro link.
+
+![Alt text](src/Resultado_Final.PNG)
