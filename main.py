@@ -18,13 +18,13 @@ async def root():
 @app.get("/PlayTimeGenre/{genero}", tags=['PlayTimeGenre'])
 async def User(genero: str):
     """
-    Devuelve el año de lanzamiento correspondiente al género proporcionado.
+    Devuelve el año con mas horas jugadas al género proporcionado.
 
     Parámetros:
-    - genero (str): El género para el cual se busca el año de lanzamiento.
+    - genero (str): El género para el cual se busca el año.
 
     Devoluciones:
-    - int: El año de lanzamiento correspondiente al género.
+    - int: El año con mas horas jugada correspondiente al género.
     - str: Mensaje de error si el género no se encuentra en la consulta.
     """
     try:

@@ -45,6 +45,8 @@ A continuacion se muestran los DataSets brindados, y las columnas de interes que
     * 'recommend':  Contiene un booleano que indica si el usuario recomienda este juego.
     * 'sentiment_analysis': Columna creada a apartir del campo 'review' esta contiene el resultado de un analisis de sentimiento sobre 'review', contiene 0 - para un comentario negativo; 1 - para uno neutral; 2 - para uno positivo.
 
+Se ha hecho un analisis exploratorio de los datos ya tratados, se encuentra en el archivo [EDA](EDA.ipynb)
+
 Una vez tenemos los datos listos para el trabajo procedemos al desarrollo del modelo de ML y las funciones. Para que nuestra API facilitara de forma eficiente y veloz los datos que hemos tratado, esta se alimentará de datasets personalizados que contienen los datos pre-procesados [Consultas](Consultas). Por lo tanto, nuestras funciones solo deben leer los datos de entrada y arrojar las respuestas guardadas en los datasets de Consulta.
 
 El desarrollo de estos datasets personalizados se encuentran en el archivo [Consultas](Consultas.ipynb) explicando paso a paso el proceso que se utilizó. De esta manera nuestras funciones devolverán datos como: año con más horas jugadas por género, usuario con más horas jugadas por género, top 3 de juegos MÁS recomendados por usuarios para el año dado, etc. [Funciones](#funciones-a-implementar)
@@ -93,6 +95,8 @@ Al final del documento encontrará una sección que detalla los pasos necesarios
 # Replica:
 </center>
 
+El despliegue de este proyecto se encuentra en: https://proyecto-1-udya.onrender.com/docs
+
 Para replicar el proyecto debemos bajar el contenido de este repositorio, luego crearemos una carpeta que contendrá los archivos necesarios para realizar el despliegue de nuestra api:
 
 ![Alt text](src/Carpetas.PNG)
@@ -136,7 +140,7 @@ Con esto nuestro entorno está listo para tratar nuestros datos. Estos se encuen
 
 Ahora que tenemos nuestros datos, debemos copiar dentro del entorno_virtual los archivos encargados de tratarlos, estos son Eda_Etl.ipynb y Consultas.ipynb
 
-![Alt text](Tratamiento.png)
+![Alt text](src/Tratamiento.png)
 
 Una vez ejecutados ambos archivos, estos nos devolverán dos carpetas: "DataSet_Limpio" contiene los tres dataset iniciales tratados y "Consultas" contiene los datos pre-procesados que consumirá nuestra API.
 
