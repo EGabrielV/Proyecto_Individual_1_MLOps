@@ -55,7 +55,7 @@ La última función desarrollada es el sistema de recomendación, la cual consta
 
 Como último paso utilizamos la libreria FastApi para desplegar nuestra API en la web con la ayuda de Render (sitio que permite crear y ejecutar aplicaciones y sitios web desde Git) y GitHub (forja para alojar proyectos). El resultado de despliegue se encuentra en: https://api-w0bc.onrender.com/docs#/
 
-Al final del documento encontrará una sección que detalla los pasos necesarios para replicar este proyecto, no obstante, se facilita un video explicativo que resume los pasos del proyecto y ayuda a la reproducción del mismo [Replica](#replica).
+Al final del documento encontrará una sección que detalla los pasos necesarios para replicar este proyecto [Replica](#replica).
 
 <center> 
 
