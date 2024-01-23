@@ -53,7 +53,7 @@ El desarrollo de estos datasets personalizados se encuentran en el archivo [Cons
 
 La última función desarrollada es el sistema de recomendación, la cual consta de un algoritmo de aprendizaje automático no supervisado que tiene como finalidad recomendar 5 juegos similares al juego de entrada, utilizando técnicas de recomendación con la biblioteca "sklearn.neighbors". Este modelo está desarrollado al final del archivo [Consultas](Consultas.ipynb).
 
-Como último paso utilizamos la libreria FastApi para desplegar nuestra API en la web con la ayuda de Render (sitio que permite crear y ejecutar aplicaciones y sitios web desde Git) y GitHub (forja para alojar proyectos). El resultado de despliegue se encuentra en: https://api-w0bc.onrender.com/docs#/
+Como último paso utilizamos la libreria FastApi para desplegar nuestra API en la web con la ayuda de Render (sitio que permite crear y ejecutar aplicaciones y sitios web desde Git) y GitHub (forja para alojar proyectos). El resultado de despliegue se encuentra en: https://proyecto-1-udya.onrender.com/docs
 
 Al final del documento encontrará una sección que detalla los pasos necesarios para replicar este proyecto [Replica](#replica).
 
